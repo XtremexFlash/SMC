@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xtremexflash.github.io/SMC/sitemap.xml
