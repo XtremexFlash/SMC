@@ -342,6 +342,29 @@ function sendEmailForm(form, submitButton) {
 
 }
 
+const slider=document.querySelector(".hero-slider");
+
+document.querySelector(".next")
+.addEventListener("click",()=>{
+
+slider.scrollBy({
+left:700,
+behavior:"smooth"
+});
+
+});
+
+
+document.querySelector(".prev")
+.addEventListener("click",()=>{
+
+slider.scrollBy({
+left:-700,
+behavior:"smooth"
+});
+
+});
+
 /* =====================================================
    EXAMPLE EMAIL TEMPLATE VARIABLES
 
