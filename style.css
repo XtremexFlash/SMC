@@ -204,49 +204,52 @@ p{
    HEADER
 ========================= */
 
-.header{
-
-    position:fixed;
-
-    top:0;
-
-    left:0;
-
-    width:100%;
-
-    background:white;
-
-    z-index:9999;
-
-    border-bottom:1px solid var(--border);
-
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 9999;
+    border-bottom: 1px solid var(--border);
+    box-sizing: border-box;
 }
 
-.navbar{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    min-height:90px;
-
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: clamp(20px, 4vw, 60px);
+    min-height: 90px;
+    box-sizing: border-box;
 }
 
-.brand-name{
-    font-size: larger;
-    color:#4A78C2;
-    margin-left:-80px;
+.logo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
 }
 
-.logo img{
+.logo img {
+    display: block;
+    height: 85px;
+    width: auto;
+    max-width: 100%;
+    position: static;
+}
 
-    height:100px;
-    position: relative;
-    left: -40px;
-    width:auto;
+.brand-name {
+    flex: 1;
+    min-width: 0;
+    color: #4A78C2;
+    margin-left: -10px;
+}
 
+.brand-name h2 {
+    margin: 0;
+    font-size: clamp(22px, 2.8vw, 32px);
+    line-height: 1.2;
+    white-space: nowrap;
 }
 
 .nav-menu > ul{
